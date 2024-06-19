@@ -1,6 +1,4 @@
 import { Module } from "@nestjs/common";
-import { RoleModule } from "./role/role.module";
-import { TokenModule } from "./token/token.module";
 import { UserModule } from "./user/user.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
@@ -19,8 +17,6 @@ import { AuthModule } from "./auth/auth.module";
   imports: [
     ACLModule,
     AuthModule,
-    RoleModule,
-    TokenModule,
     UserModule,
     HealthModule,
     PrismaModule,
